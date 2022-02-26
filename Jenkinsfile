@@ -21,7 +21,7 @@ pipeline {
        stage('Unit Tests - JUnit and JaCoCo') {
           steps {
              sh "mvn test"
-      }
+             }
              post {
                always {
                  junit 'target/surefire-reports/*.xml'
@@ -30,7 +30,7 @@ pipeline {
       }
       stage('Mutation Tests - PIT') {
          steps {
-        sh "mvn org.pitest:pitest-maven:mutationCoverage"
+           sh "mvn org.pitest:pitest-maven:mutationCoverage"
       }
           post {
             always {
