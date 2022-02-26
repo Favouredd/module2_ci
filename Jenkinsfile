@@ -45,7 +45,7 @@ pipeline {
   -Dsonar.projectKey=devsecops-spring2-app \
   -Dsonar.host.url=http://azuredemo1.eastus.cloudapp.azure.com:9000 \
   -Dsonar.login=674c734985e4d9a6a99bb7d3ee5494e93b09ccc2'
-    }     
+     }     
    }
-  }
+ }
 }
