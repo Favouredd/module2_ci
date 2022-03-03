@@ -39,7 +39,7 @@ pipeline {
         }
       }
     }
-   stage('CodeQuality-SAST') {
+   stage('CodeQuality-SAST'){
       steps {
          sh 'mvn clean verify sonar:sonar \
   -Dsonar.projectKey=devsecops-spring2-app \
